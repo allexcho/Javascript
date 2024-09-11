@@ -121,10 +121,37 @@ for(desde; hasta; actualizacion){
 // }
 // console.log(`La suma de los numeros ingresados es ${suma}`);
 
-for(let i = 1; i <= 5; i++){
-    if (i == 2) {
-        break
-    }
-    console.log(i);
+// for(let i = 1; i <= 5; i++){
+//     if (i == 2) {
+//         break
+//     }
+//     console.log(i);
     
-}
+// }
+
+
+// Ejercicio 1
+
+// let nombre = "alex";
+
+// if (nombre == "alex") {
+//     console.log("Fui yo");
+// }else{
+//     console.log("Yo no fui");
+// };
+
+//  Ejercicio 2
+
+// let number = parseInt(prompt("Ingrese un numero entre 1 - 4"));
+
+// if (number == 1) {
+//     console.log("Elegiste a Homero");
+// }if (number === 2) {
+//     console.log("Elegiste a Marge");
+// }if (number === 3) {
+//     console.log("Elegiste a Bart");
+// }if (number === 4) {
+//     console.log("Elegiste a Lisa");
+// }
+
+// Ejercicio 3
