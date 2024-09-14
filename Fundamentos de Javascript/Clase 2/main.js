@@ -18,7 +18,6 @@ Si <condicion> entonces <operacion>
 //     console.log("Vas a ver este mensaje")
 // }
 
-
 // if..else
 
 // const string = "red"
@@ -35,29 +34,28 @@ Si <condicion> entonces <operacion>
 //     console.log("No ingresaste un dato de dato string");
 // }else{
 //     console.log(`Hola, como estas ${user}`);
-    
+
 // }
 
 // let price = 50
 
 // if (price < 50) {
-//     console.log("El precio de menor a $50");   
+//     console.log("El precio de menor a $50");
 // }else if (price > 120) {
 //     console.log("No se cumple la condicion");
 // }else{
 //     console.log("sdfsadfadsfg");
-    
+
 // }
 
 // let number = 90;
 // let esMayor = (number > 5);
 
 // if (esMayor) {
-//     console.log("La condicion se cumple");   
+//     console.log("La condicion se cumple");
 // }else{
 //     console.log("El valor no se cumple");
 // }
-
 
 // let nombre = prompt("Ingresa tu nombre"); //Input
 // let lastName = prompt("Ingresa tu apellido");   //Input
@@ -126,9 +124,10 @@ for(desde; hasta; actualizacion){
 //         break
 //     }
 //     console.log(i);
-    
+
 // }
 
+// Ejercicios usando estructura IF -----------------------
 
 // Ejercicio 1
 
@@ -142,16 +141,47 @@ for(desde; hasta; actualizacion){
 
 //  Ejercicio 2
 
-// let number = parseInt(prompt("Ingrese un numero entre 1 - 4"));
+// let number = prompt("Ingrese un numero entre 1 - 4");
 
 // if (number == 1) {
-//     console.log("Elegiste a Homero");
-// }if (number === 2) {
-//     console.log("Elegiste a Marge");
-// }if (number === 3) {
-//     console.log("Elegiste a Bart");
-// }if (number === 4) {
-//     console.log("Elegiste a Lisa");
+//   console.log("Elegiste a Homero");
+// }
+// if (number == 2) {
+//   console.log("Elegiste a Marge");
+// }
+// if (number == 3) {
+//   console.log("Elegiste a Bart");
+// }
+// if (number == 4) {
+//   console.log("Elegiste a Lisa");
 // }
 
 // Ejercicio 3
+
+// let p1 = prompt("Ingrese el primer producto");
+// let p2 = prompt("Ingrese el segundo producto");
+// let p3 = prompt("Ingrese el tercer producto");
+// let p4 = prompt("Ingrese el cuarto producto");
+
+// if (p1 && p2 && p3 && p4) {
+//   let listaDeProductos = `${p1} ${p2} ${p3} ${p4}`;
+//   alert(`Lista de productos: ${listaDeProductos}`);
+// } else {
+//   alert("Debes ingresar todos los productos");
+// }
+
+// Ejercicios usando Ciclos ------------------------
+
+// Ejercicio 1
+
+// let alumno = prompt("Ingrese un numero de 1-10");
+
+// for (i = 1; i <= 10; i++) {
+//   alert(i);
+// }
+
+// Ejercicio 2
+
+// Ejercicio 3
+
+// Ejercicio 4
