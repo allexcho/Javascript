@@ -182,6 +182,27 @@ for(desde; hasta; actualizacion){
 
 // Ejercicio 2
 
+// let numero = parseInt(prompt("Ingresa un número entre 1 y 15:"));
+
+// if (numero >= 1 && numero <= 15) {
+//     if (numero % 2 === 0) {
+//         console.log(`${numero} es par`);
+//     } else {
+//         console.log(`${numero} es impar`);
+//     }
+// }
+
+for (let i = 0; i < 1; i++) {
+    let numero = parseInt(prompt("Ingresa un número entre 1 y 15:"));
+if (numero >= 1 && numero <= 15) {
+        if (numero % 2 === 0) {
+            console.log(`${numero} es par`);
+        } else {
+            console.log(`${numero} es impar`);
+        }
+    }
+}
+
 // Ejercicio 3
 
 // Ejercicio 4
