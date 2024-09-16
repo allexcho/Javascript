@@ -182,27 +182,44 @@ for(desde; hasta; actualizacion){
 
 // Ejercicio 2
 
-// let numero = parseInt(prompt("Ingresa un número entre 1 y 15:"));
+// let num = parseInt(prompt("Ingrese un numero de 1-4 o ingrese ESC"));
 
-// if (numero >= 1 && numero <= 15) {
-//     if (numero % 2 === 0) {
-//         console.log(`${numero} es par`);
-//     } else {
-//         console.log(`${numero} es impar`);
-//     }
+// if (num === 1) {
+//   console.log("Tomate");
+// } else if (num === 2) {
+//   console.log("Papa");
+// } else if (num === 3) {
+//   console.log("Carne");
+// } else if (num === 4) {
+//   console.log("Pollo");
+// } else if (num !== "ESC") {
+//   console.log("Ciclo terminado");
 // }
-
-for (let i = 0; i < 1; i++) {
-    let numero = parseInt(prompt("Ingresa un número entre 1 y 15:"));
-if (numero >= 1 && numero <= 15) {
-        if (numero % 2 === 0) {
-            console.log(`${numero} es par`);
-        } else {
-            console.log(`${numero} es impar`);
-        }
-    }
-}
 
 // Ejercicio 3
 
+// let num = parseInt(prompt("Ingrese un numero del 0-15"));
+
+// for (i = 0; i <= 15; i++) {
+//   if (num % 2 === 0) {
+//     console.log(`${num}: es par`);
+//   } else {
+//     console.log(`${num}: es impar`);
+//   }
+// }
+
 // Ejercicio 4
+
+// let num = parseInt(prompt("1-100"));
+
+// for (i = 1; i <= 100; i++) {
+//   if (num % 3 === 0 && num % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (num % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (num % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
