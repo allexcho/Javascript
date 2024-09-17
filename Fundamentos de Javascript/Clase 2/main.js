@@ -196,6 +196,31 @@ for(desde; hasta; actualizacion){
 //   console.log("Ciclo terminado");
 // }
 
+// Manera 2
+
+// let num = prompt("Ingrese un numero de 1-4:")
+
+// while (num != "ESC") {
+//     switch (num) {
+//         case "1":
+//             console.log("Tomate");
+//             break;
+//         case "2":
+//             console.log("Papa");
+//             break;
+//         case "3":
+//             console.log("Carne");
+//             break;
+//         case "4":
+//             console.log("Pollo");
+//             break;
+//             default:
+//                 console.log("Error")
+//             break;
+//     }
+//     num = prompt("Ingrese un numero de 1-4:")
+// }
+
 // Ejercicio 3
 
 // let num = parseInt(prompt("Ingrese un numero del 0-15"));
