@@ -161,3 +161,29 @@ nombres.reverse()   // Te da vuelta el array el orden
 // let nuevoArr = arr.concat(["alex", "yeni"]);
 
 // console.log(nuevoArr.join("\n"));
+
+// Ejercicio 1:
+
+// Ejercicio 2:
+
+// const numeros = [23, 54, 12, 87, 5, 36];
+
+// for (const number of numeros) {
+//   if (number % 2 === 0) {
+//     console.log(`${number} es par`);
+//   } else {
+//     console.log(`${number} es impar`);
+//   }
+// }
+
+// Ejercicio 3:
+
+// let colors = ["Red", "Green", "White", "Black"];
+
+// console.log(colors.join(","));
+
+// console.log(colors.join("+"));
+
+// Ejercicio 4:
+
+// Ejercicio 5:
