@@ -9,6 +9,7 @@ for (let index = 0; index < equipo.length; index++) {
     console.log(`Posicion ${index} y jugador ${equipo[index]}`);
 }
 
+
 -------------------------------------
 Lista de tareas pendientes usando un ciclo for:
 
@@ -49,7 +50,7 @@ Resultado esperado :
 "Red+Green+White+Black"
 
 4.Escribe un programa en JavaScript para encontrar el elemento más frecuente en una matriz.
-Matriz de ejemplo : const arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+Matriz de ejemplo : const arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 Salida de ejemplo : a ( 5 veces )
 
 5.Tenemos las siguientes matrices:

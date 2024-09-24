@@ -164,6 +164,26 @@ nombres.reverse()   // Te da vuelta el array el orden
 
 // Ejercicio 1:
 
+// const palabras = ['CASA', 'PERRO', 'ELEFANTE', 'OSO'];
+// let vocales = ["A", "E", "I", "O", "U"];
+// let i = 0;    // Inicio principal para recorrer las palabras
+
+// while(i < palabras.length) {    // Va recorrer infinitamente el array
+//     let palabra = palabras[i]   // Va recorrer CADA DATO (CASA, PERRO, ELEFANTE, OSO)
+//     let contadorVocal = 0;      // Almacena cuantos vocales hay en cada letra
+//     let v = 0;              // Se reutiliza vocal para contar cada letra de la palabra
+
+//     while(v < palabra.length) {     // Tuvimos que introducir un nuevo indice (v) para poder recorrer el array sin interferir con (i)
+//         let letra = palabra[v];
+//         if (vocales.includes(letra)) {
+//             contadorVocal++;
+//         }
+//         v++
+//     }
+//     console.log(`La palabra ${palabra} tiene ${contadorVocal} vocales`)
+//     i++
+// }
+
 // Ejercicio 2:
 
 // const numeros = [23, 54, 12, 87, 5, 36];
@@ -186,4 +206,40 @@ nombres.reverse()   // Te da vuelta el array el orden
 
 // Ejercicio 4:
 
+// const arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+// let frecuencia = [];
+// let repeticion = 0; // Almacenar los datos
+// let elementoFrecuente 
+
+// for(const element of arr1) {
+//     if (frecuencia[element]) {
+//         frecuencia[element]++
+//     } else {
+//         frecuencia[element] = 1
+//     }
+//     if (frecuencia[element] > repeticion) {
+//         repeticion = frecuencia[element]
+//         elementoFrecuente = element
+//     }
+// }
+// console.log(`El elemento frecuente: ${elementoFrecuente} ( ${repeticion} veces )`)
+
 // Ejercicio 5:
+
+// const color = ["Azul", "Verde", "Rojo", "Naranja", "Violeta", "Índigo", "Amarillo"];
+// const o = ["th", "st", "nd", "rd"]
+
+// for(let i = 0; i < color.length; i++) {
+//     let posicion = i + 1;   // Para que arranque en 1 y no en 0
+//     let sudfijo 
+//     if (posicion === 1) {
+//         sudfijo = o[1]  // Va tomar el st del array o 
+//     }else if(posicion === 2) {
+//         sudfijo = o[2]  // Va tomar el nd del array o
+//     }else if(posicion === 3) {
+//         sudfijo = o[3]  // Va tomar el rd del array o
+//     }else {
+//         sudfijo = o[0]  // Va toamr el th del array o
+//     }
+//     console.log(`La ${posicion} ${sudfijo} es opcion ${color[i]}`)
+// }
