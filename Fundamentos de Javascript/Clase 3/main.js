@@ -209,7 +209,7 @@ nombres.reverse()   // Te da vuelta el array el orden
 // const arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 // let frecuencia = [];
 // let repeticion = 0; // Almacenar los datos
-// let elementoFrecuente 
+// let elementoFrecuente
 
 // for(const element of arr1) {
 //     if (frecuencia[element]) {
@@ -231,9 +231,9 @@ nombres.reverse()   // Te da vuelta el array el orden
 
 // for(let i = 0; i < color.length; i++) {
 //     let posicion = i + 1;   // Para que arranque en 1 y no en 0
-//     let sudfijo 
+//     let sudfijo
 //     if (posicion === 1) {
-//         sudfijo = o[1]  // Va tomar el st del array o 
+//         sudfijo = o[1]  // Va tomar el st del array o
 //     }else if(posicion === 2) {
 //         sudfijo = o[2]  // Va tomar el nd del array o
 //     }else if(posicion === 3) {
@@ -243,3 +243,29 @@ nombres.reverse()   // Te da vuelta el array el orden
 //     }
 //     console.log(`La ${posicion} ${sudfijo} es opcion ${color[i]}`)
 // }
+
+// Nuevos ejercicios para hacer! ------------------------------------
+
+// Ejercicio nuevo 1:
+
+// Ejercicio nuevo 2:
+
+// Ejercicio nuevo 3:
+
+// Ejercicio nuevo 4:
+
+// let array = ["Manzana", "Banana,", "Frutilla", "Melon", "Naranja"];
+
+// array.push("Durazno");
+// console.log(array);
+
+// array.shift();
+// console.log(array);
+
+// Ejercicio neuvo 5:
+
+// let palabras = ["Hermosa", "manana", "verdad"];
+
+// palabras.sort();
+// palabras.join(",");
+// console.log(palabras);
