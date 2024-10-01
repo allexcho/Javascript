@@ -248,9 +248,37 @@ nombres.reverse()   // Te da vuelta el array el orden
 
 // Ejercicio nuevo 1:
 
+// let row = 5; // Cantidad de filas
+
+// for (let i = 1; i < row; i++) {
+//   // Itera sobre row
+//   let rows = ""; // Declaro una nueva variable con * espacio
+//   for (let j = 1; j <= i; j++) {
+//     // Creo otro bucle para iterar sobre cada una de los row
+//     rows += "* ";
+//     // Para agregar un * espacio
+//   }
+//   console.log(rows);
+// }
+
 // Ejercicio nuevo 2:
 
 // Ejercicio nuevo 3:
+
+let peso = 74;
+let altura = 1.77;
+
+let bmi = peso / (altura * altura);
+
+if (bmi <= 17) {
+  console.log("Bajo de peso");
+} else if (bmi >= 18 && bmi <= 25) {
+  console.log("Peso Normal");
+} else if (bmi >= 26 && bmi <= 30) {
+  console.log("Subio de peso");
+} else {
+  console.log("Obeso");
+}
 
 // Ejercicio nuevo 4:
 
