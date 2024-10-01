@@ -265,20 +265,20 @@ nombres.reverse()   // Te da vuelta el array el orden
 
 // Ejercicio nuevo 3:
 
-let peso = 74;
-let altura = 1.77;
+// let peso = 74;
+// let altura = 1.77;
 
-let bmi = peso / (altura * altura);
+// let bmi = peso / (altura * altura);
 
-if (bmi <= 17) {
-  console.log("Bajo de peso");
-} else if (bmi >= 18 && bmi <= 25) {
-  console.log("Peso Normal");
-} else if (bmi >= 26 && bmi <= 30) {
-  console.log("Subio de peso");
-} else {
-  console.log("Obeso");
-}
+// if (bmi <= 17) {
+//   console.log("Bajo de peso");
+// } else if (bmi >= 18 && bmi <= 25) {
+//   console.log("Peso Normal");
+// } else if (bmi >= 26 && bmi <= 30) {
+//   console.log("Subio de peso");
+// } else {
+//   console.log("Obeso");
+// }
 
 // Ejercicio nuevo 4:
 
