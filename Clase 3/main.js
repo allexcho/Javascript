@@ -297,3 +297,60 @@ nombres.reverse()   // Te da vuelta el array el orden
 // palabras.sort();
 // palabras.join(",");
 // console.log(palabras);
+
+// Ejercicios Nuevos Arrays
+
+// Ejercicio 1:
+
+// let numbers = [100, 45, 34, 12, 134, 54, 43];
+// let sum = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   sum += numbers[i];
+// }
+// console.log("La suma del array de numbers es:", sum);
+
+// let maxNumber = Math.max(...numbers);
+// let minNumber = Math.min(...numbers);
+
+// console.log("El numero mas grande es:", maxNumber);
+// console.log("El numero mas chico es", minNumber);
+
+/* ------------------------------------------------- */
+
+// let numbers = [100, 45, 34, 12, 134, 54, 43];
+
+// let sum = 0;
+
+// let numAlto = numbers[0];
+// let numMenor = numbers[0];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] > numAlto) {
+//     numAlto = numbers[i];
+//   }
+//   if (numbers[i] < numMenor) {
+//     numMenor = numbers[i];
+//   } else {
+//     sum += numbers[i];
+//   }
+// }
+
+// console.log(`El numero mas alto es: ${numAlto}`);
+// console.log(`El numero mas chico es: ${numMenor}`);
+// console.log(`La suma de todos los numeros es: ${sum}`);
+
+// Ejercicio 2:
+
+// Ejercicio 3:
+
+let numbers = [123, 934, 423, 514, 234, 543, 734];
+
+for (let i = 0; i < numbers.length; i++) {
+  let middleNum = numbers[0];
+  if (numbers[i] % 2) {
+    middleNum = numbers[i];
+  }
+}
+
+console.log(middleNum);
