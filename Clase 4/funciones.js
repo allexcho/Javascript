@@ -12,7 +12,7 @@ Functions: Propiedades basicas
 /* Funciones simples: */
 
 // function saludo () {
-//     console.log("Hola soy una funcion simple")    
+//     console.log("Hola soy una funcion simple")
 // }
 
 /* Luego hay que declararlo, llamarlo: */
@@ -59,7 +59,7 @@ function conParametros(parametro1,parametro2) {
 // function horasTotales(horasDiaras) {
 //     let totalHoras = 0;
 
-//     // For Loop para que recorra el array de horas diarias 
+//     // For Loop para que recorra el array de horas diarias
 
 //     for(let i = 0; i < horasDiaras.length; i++) {
 //         totalHoras += horasDiaras[i]
@@ -103,7 +103,7 @@ Flecha: Una expresión de función flecha es una alternativa compacta a una expr
 
 /* Function en una sola linea de codigo */
 
-// const resta = (a, b) => a - b 
+// const resta = (a, b) => a - b
 // console.log(resta(100, 50));
 
 /* Comparar numeros */
@@ -120,3 +120,13 @@ Flecha: Una expresión de función flecha es una alternativa compacta a una expr
 
 // const string = (string1, string2) => `${string1} ${string2}`
 // console.log(string("Hola,", "Alex"));
+
+/* Ejercicios con functions! */
+
+// Ejercicio 1:
+
+// Ejercicio 2:
+
+// Ejercicio 3:
+
+// Ejercicio 4
