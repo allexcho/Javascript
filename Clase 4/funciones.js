@@ -125,20 +125,6 @@ Flecha: Una expresión de función flecha es una alternativa compacta a una expr
 
 // Ejercicio 1:
 
-let notas = [];
-let notaFinal = 0;
-let porcentaje = (0.6, 0.3, 0.1);
-
-let notas1 = notas(prompt("Ingresa tu nota del examen 1-10:"));
-let notas2 = notas(prompt("Ingresa tu nota de los trabajos practicos 1-10:"));
-let notas3 = notas(prompt("Ingresa tu nota de participacion 1-10:"));
-
-for (let i = 0; i < notas.length; i++) {
-  notaFinal += notas[i] * porcentaje[i];
-}
-
-console.log(`La nota final del estudiante es ${notaFinal}`);
-
 // Ejercicio 2:
 
 // function calcularDescuento(precio, xDescuento) {
