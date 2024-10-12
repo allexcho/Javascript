@@ -31,4 +31,6 @@ Imprimir la categoría correspondiente en la consola.
 
 Solicitar un número al usuario.
 Usar una estructura if para clasificar el número como positivo, negativo o cero.
-Mostrar el resultado en la consola. 5. Escribe una función de JavaScript que acepte una cadena como parámetro y convierta la primera letra de cada palabra a mayúscula. Cadena de ejemplo : 'el veloz zorro marrón' Resultado esperado: 'El veloz zorro marrón'
+Mostrar el resultado en la consola.
+
+5. Escribe una función de JavaScript que acepte una cadena como parámetro y convierta la primera letra de cada palabra a mayúscula. Cadena de ejemplo : 'el veloz zorro marrón' Resultado esperado: 'El veloz zorro marrón'
