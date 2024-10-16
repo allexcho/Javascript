@@ -121,9 +121,11 @@ Flecha: Una expresión de función flecha es una alternativa compacta a una expr
 // const string = (string1, string2) => `${string1} ${string2}`
 // console.log(string("Hola,", "Alex"));
 
+
+
 /* ---------- Ejercicios con functions! ---------- */
 
-// Ejercicio 1:
+
 
 // Ejercicio 2:
 
@@ -172,4 +174,24 @@ Flecha: Una expresión de función flecha es una alternativa compacta a una expr
 // let numeroIngresado = parseFloat(prompt("Ingresa un numero:"));
 // let final = determinarNumero(numeroIngresado);
 
+/* ---------- Ejercicios nuevos ---------- */
+
+// Ejercicio 1:
+
+// Ejercicio 2:
+
+// Ejercicio 3:
+
+// Ejercicio 4:
+
 // Ejercicio 5:
+
+// Ejercicio 6:
+
+// Ejercicio 7:
+
+// Ejercicio 8:
+
+// Ejercicio 9:
+
+// Ejercicio 10:
