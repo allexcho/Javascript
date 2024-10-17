@@ -89,11 +89,11 @@ function organizadorLibros(titulo, autor, genero) {
 
 function listaLibros() {
     if (biblioteca.length === 0) {
-        console.log("La biblioteca esta vacia!")
+        console.log("La biblioteca está vacía!")
     } else {
-        console.log("Lista de libros")
+        console.log("\nLista de libros\n")  // Salto de línea
         for (let i = 0; i < biblioteca.length; i++) {   
-            console.log((i + 1) + "." + biblioteca[i][0] + "por" + biblioteca[i][1] + biblioteca[i][2]) 
+            console.log((i + 1) + ". " + biblioteca[i][0] + " por " + biblioteca[i][1] + " (" + biblioteca[i][2] + ")") 
         }
     }
 }
@@ -106,9 +106,9 @@ function buscarGenero(genero) {
         }
     }
     if (librosEncontrados.length === 0) {
-        console.log(`No se encontraron libros del genero ${genero}`)
+        console.log(`\nNo se encontraron libros del género ${genero}\n`)  // Salto de línea
     } else {
-        console.log(`Libros del genero: ${genero}`)
+        console.log(`\nLibros del género: ${genero}\n`)  // Salto de línea
         for (let i = 0; i < librosEncontrados.length; i++) {
             console.log(`Libros encontrados: ${librosEncontrados[i][0]} por ${librosEncontrados[i][1]}`)
         }
