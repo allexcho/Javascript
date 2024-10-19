@@ -99,6 +99,20 @@ tablaMultiplicacion(5);
 
 // Ejercicio 7:
 
+function filtrarNumeros(numeros) {
+  let numerosPares = [];
+
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] % 2 === 0) {
+      numerosPares.push(numeros[i]);
+    }
+  }
+  return numerosPares;
+}
+let numerosAlazar = [45, 12, 54, 75, 23, 92];
+let resultado = filtrarNumeros(numerosAlazar);
+console.log(filtrarNumeros(numerosAlazar));
+
 // Ejercicio 8:
 
 function contadorVocales(palabra) {
