@@ -128,7 +128,15 @@ contadorVocales("La clase de hoy es rompe cabezas!");
 
 // Ejercicio 9:
 
-function calcularPuntosFidelidad(totalGastado) {}
+function calcularPuntosFidelidad(totalGastado) {
+  let puntos = ((totalGastado - (totalGastado % 100)) / 100) * 10;
+
+  if (totalGastado >= 1000) {
+    puntos += 100;
+  }
+  console.log(`El total de puntos: ${puntos}`);
+}
+calcularPuntosFidelidad(1200);
 
 // Ejercicio 10:
 
