@@ -107,11 +107,9 @@ function filtrarNumeros(numeros) {
       numerosPares.push(numeros[i]);
     }
   }
-  return numerosPares;
+  console.log(`Los numeros pares son: ${numerosPares}`);
 }
-let numerosAlazar = [45, 12, 54, 75, 23, 92];
-let resultado = filtrarNumeros(numerosAlazar);
-console.log(filtrarNumeros(numerosAlazar));
+filtrarNumeros([123, 42, 34, 125, 764, 352, 923, 52]);
 
 // Ejercicio 8:
 
@@ -129,6 +127,8 @@ function contadorVocales(palabra) {
 contadorVocales("La clase de hoy es rompe cabezas!");
 
 // Ejercicio 9:
+
+function calcularPuntosFidelidad(totalGastado) {}
 
 // Ejercicio 10:
 
