@@ -218,6 +218,8 @@ Escriba un programa en JavaScript que cree una clase llamada "BankAccount" con p
 
 /* Ejercicios Nuevos usando function CLASS */
 
+// Function class 1:
+
 class Product {
   constructor(sku, description, price) {
     this.sku = sku;
@@ -227,7 +229,7 @@ class Product {
   articulo() {
     if (this.sku) {
       console.log(
-        `Articulo: ${this.sku}. \nDescription: ${this.description}. \nPrecio: ${this.price}`
+        `Articulo: ${this.sku}. \nDescription: ${this.description}. \nPrecio: ${this.price}.`
       );
     } else {
       console.log(`No se encontro ningun articulo: ${this.sku}.`);
@@ -237,3 +239,27 @@ class Product {
 
 const producto = new Product("CA1", "Camisa rayada", 19900);
 producto.articulo();
+
+// Function class 2:
+
+class Auto {
+  constructor(marca, modelo, km) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.km = km;
+  }
+  marcaAuto() {
+    if (this.marca && this.modelo) {
+      console.log(
+        `Marca: ${this.marca}. \nModelo: ${this.modelo}. \nKM: ${this.km}.`
+      );
+    } else {
+      console.log(
+        `No se encontro la marca ${this.marca} ni modelo ${this.modelo}`
+      );
+    }
+  }
+}
+
+const autito = new Auto("Toyota", "Corolla", 60000);
+autito.marcaAuto();
