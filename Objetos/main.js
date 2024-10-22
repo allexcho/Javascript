@@ -12,7 +12,7 @@ Sintaxis: {clave: valor, clave: valor,...}
 
 // const simple = {}
 
-// // Objeto literal: 
+// // Objeto literal:
 
 // const persona = {
 //     nombre: 'Alex',
@@ -47,7 +47,7 @@ Sintaxis: {clave: valor, clave: valor,...}
 
 // // Metodos en los objetos: Tambien son tecnicamente funciones que se pueden agregar a un objeto. Solo se limitan a tener acceso a las propiedades del objeto.
 
-// // Function: 
+// // Function:
 
 // function  f1 () {
 //     return this
@@ -121,7 +121,7 @@ Sintaxis: {clave: valor, clave: valor,...}
 // const persona5 = new Persona('Alex', 'Cho', 26)
 // persona5.saludar() // Hola, mi nombre es Alex Cho
 
-// // Ejemplo producto: 
+// // Ejemplo producto:
 
 // class producto {
 //     constructor(nombre, precio) {
@@ -145,7 +145,7 @@ Sintaxis: {clave: valor, clave: valor,...}
 // producto1.vender() // Marca el producto1 como vendido
 // producto2.vender() // Marca el producto2 como vendido
 
-// /* 
+// /*
 // Escriba un programa en JavaScript para crear una clase llamada 'Rectángulo' con propiedades de ancho y alto. Incluya dos métodos para calcular el área y el perímetro del rectángulo. Cree una instancia de la clase 'Rectángulo' y calcule su área y perímetro
 // */
 
@@ -170,49 +170,70 @@ Sintaxis: {clave: valor, clave: valor,...}
 Escriba un programa en JavaScript que cree una clase llamada "BankAccount" con propiedades para el número de cuenta y el saldo. Incluya métodos para depositar y retirar dinero de la cuenta. Cree algunas instancias de la clase "BankAccount", deposite algo de dinero y retire una parte.
 */
 
-class BankAccount {
-    constructor(accountNumber, balance = 0) {
-        this.accountNumber = accountNumber
-        this.balance = balance
+// class BankAccount {
+//     constructor(accountNumber, balance = 0) {
+//         this.accountNumber = accountNumber
+//         this.balance = balance
+//     }
+//     // Metodo para depositar plata:
+//     deposit(amount) {
+//         if (amount > 0) {
+//             this.balance += amount
+//             console.log(`El monto del deposito es: $${amount}. Nuevo saldo: $${this.balance}`)
+//         } else {
+//             console.log("El monto a depositar debe ser positivo.")
+//         }
+//     }
+//     // Metodo para retirar plata:
+//     withdraw(amount) {
+//         if (amount > 0 && amount <= this.balance) {
+//             this.balance -= amount;
+//             console.log(`El monto retirado es: $${amount}. Nuevo saldo: $${this.balance}`)
+//         } else {
+//             console.log("Fondos insuficientes o monto invalido.")
+//         }
+//     }
+// }
+
+// const account1 = new BankAccount('94870479', 50000);
+// // const account2 = new BankAccount(50000, 20000)
+
+// // Simular depositar y retirar plata de la cuenta:
+
+// account1.deposit(1400000);
+// account1.withdraw(40000);
+
+// // account2.deposit(10000);
+// // account2.withdraw(5000);
+
+// // for...in itera sobre las propiedades de las cuentas:
+
+// console.log(`\nPropiedades de la cuenta 1: `)
+
+// for (let key in account1) {
+//     if (account1(key)) {
+//         console.log(`${key}: ${account1[key]}`)
+//     }
+// }
+
+/* Ejercicios Nuevos usando function CLASS */
+
+class Product {
+  constructor(sku, description, price) {
+    this.sku = sku;
+    this.description = description;
+    this.price = price;
+  }
+  articulo() {
+    if (this.sku) {
+      console.log(
+        `Articulo: ${this.sku}. \nDescription: ${this.description}. \nPrecio: ${this.price}`
+      );
+    } else {
+      console.log(`No se encontro ningun articulo: ${this.sku}.`);
     }
-    // Metodo para depositar plata:
-    deposit(amount) {
-        if (amount > 0) {
-            this.balance += amount
-            console.log(`El monto del deposito es: $${amount}. Nuevo saldo: $${this.balance}`)
-        } else {
-            console.log("El monto a depositar debe ser positivo.")
-        }
-    }
-    // Metodo para retirar plata:
-    withdraw(amount) {
-        if (amount > 0 && amount <= this.balance) {
-            this.balance -= amount;
-            console.log(`El monto retirado es: $${amount}. Nuevo saldo: $${this.balance}`)
-        } else {
-            console.log("Fondos insuficientes o monto invalido.")
-        }
-    } 
+  }
 }
 
-const account1 = new BankAccount('94870479', 50000);
-// const account2 = new BankAccount(50000, 20000)
-
-// Simular depositar y retirar plata de la cuenta:
-
-account1.deposit(1400000);
-account1.withdraw(40000);
-
-// account2.deposit(10000);
-// account2.withdraw(5000);
-
-// for...in itera sobre las propiedades de las cuentas:
-
-console.log(`\nPropiedades de la cuenta 1: `)
-
-for (let key in account1) {
-    if (account1(key)) {
-        console.log(`${key}: ${account1[key]}`)
-    }
-}
-
+const producto = new Product("CA1", "Camisa rayada", 19900);
+producto.articulo();
