@@ -301,19 +301,19 @@ Escriba un programa en JavaScript que cree una clase llamada "BankAccount" con p
 
 // Function class 4
 
-class Tarea {
-  constructor(materia, nota) {
-    this.materia = materia;
-    this.nota = nota;
-  }
-  thisMateria() {
-    if (this.materia && this.nota >= 6) {
-      console.log(`Aprobado! \nMateria: ${this.materia} \nNota: ${this.nota}`);
-    } else {
-      console.log("Desaprobado.");
-    }
-  }
-}
+// class Tarea {
+//   constructor(materia, nota) {
+//     this.materia = materia;
+//     this.nota = nota;
+//   }
+//   thisMateria() {
+//     if (this.materia && this.nota >= 6) {
+//       console.log(`Aprobado! \nMateria: ${this.materia} \nNota: ${this.nota}`);
+//     } else {
+//       console.log("Desaprobado.");
+//     }
+//   }
+// }
 
-const material = new Tarea("Matematica", 6);
-material.thisMateria();
+// const material = new Tarea("Matematica", 6);
+// material.thisMateria();
