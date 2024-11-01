@@ -1,5 +1,5 @@
-1) Instrucciones - Preparación de Lasaña Avanzada
-Lucian quiere preparar una lasaña especial para su novia, pero necesita un sistema más sofisticado que le ayude a:
+1. Instrucciones - Preparación de Lasaña Avanzada
+   Lucian quiere preparar una lasaña especial para su novia, pero necesita un sistema más sofisticado que le ayude a:
 
 Verificar si tiene todos los ingredientes necesarios
 Calcular tiempos de preparación según las capas y tipos de ingredientes
@@ -41,14 +41,19 @@ Crear una receta especial con: ["pasta", "carne", "salsa", "queso", "bechamel", 
 Crear una receta imposible con: ["pasta", "salmon", "caviar"] y 2 capas
 ########################################################
 
-2) Crea un Sistema de Biblioteca de Videojuegos
-Debes crear una clase llamada BibliotecaJuegos que gestione una biblioteca de videojuegos con las siguientes funcionalidades:
+2. Crea un Sistema de Biblioteca de Videojuegos
+   Debes crear una clase llamada BibliotecaJuegos que gestione una biblioteca de videojuegos con las siguientes funcionalidades:
+
 Arrays para juegos y préstamos
 Métodos simples
 Funciones básicas:
+
 agregarJuego: Agrega un nuevo juego al array
+
 prestarJuego: Marca un juego como prestado
+
 mostrarJuegos: Muestra la lista de juegos
+
 contarJuegos: Cuenta juegos disponibles y prestados
 Estructuras usadas:
 Arrays
