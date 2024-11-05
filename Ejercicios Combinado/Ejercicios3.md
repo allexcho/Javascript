@@ -69,3 +69,13 @@ disponible
 Cada préstamo es un objeto con:
 idJuego
 nombreUsuario
+
+3) Registro de Gastos Semanales:
+Usa objetos para organizar los gastos
+Implementa arrays para guardar el historial
+Incluye funciones con parámetros para agregar gastos y calcular balances
+
+4) Organizador de Tareas del Hogar:
+Combina objetos para representar tareas
+Usa arrays para almacenar múltiples tareas
+Incluye funciones con parámetros para gestionar el estado de las tareas
