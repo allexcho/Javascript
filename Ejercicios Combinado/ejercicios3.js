@@ -191,60 +191,64 @@
 
 /* Ejercicio 4 */
 
-let organizador = {
-  tareas: [],
-};
+// let organizador = {
+//   tareas: [],
+// };
 
-function agregarTarea(descripcion, asignado, fecha, estado) {
-  let newTareas = {
-    descripcion,
-    asignado,
-    fecha,
-    estado,
-  };
-  organizador.tareas.push(newTareas);
-}
+// function agregarTarea(descripcion, asignado, fecha, estado) {
+//   let newTareas = {
+//     descripcion,
+//     asignado,
+//     fecha,
+//     estado,
+//   };
+//   organizador.tareas.push(newTareas);
+// }
 
-function actualizarEstado(index, estado) {
-  organizador.tareas[index].estado = estado;
-}
+// function actualizarEstado(index, estado) {
+//   organizador.tareas[index].estado = estado;
+// }
 
-function listarTareas() {
-  for (let i = 0; i < organizador.tareas.length; i++) {
-    let status = organizador.tareas[i].estado;
-    if (organizador.tareas[i].estado === true) {
-      status = "Completado";
-    } else if (organizador.tareas[i].estado === false) {
-      status = "Pendiente";
-    }
-    console.log(
-      `Descripcion: ${organizador.tareas[i].descripcion} \nAsignado: ${organizador.tareas[i].asignado} \nFecha: ${organizador.tareas[i].fecha} \nEstado: ${status}`
-    );
-  }
-}
+// function listarTareas() {
+//   for (let i = 0; i < organizador.tareas.length; i++) {
+//     let status = organizador.tareas[i].estado;
+//     if (organizador.tareas[i].estado === true) {
+//       status = "Completado";
+//     } else if (organizador.tareas[i].estado === false) {
+//       status = "Pendiente";
+//     }
+//     console.log(
+//       `Descripcion: ${organizador.tareas[i].descripcion} \nAsignado: ${organizador.tareas[i].asignado} \nFecha: ${organizador.tareas[i].fecha} \nEstado: ${status}`
+//     );
+//   }
+// }
 
-function filtrarTareas(status) {
-  for (let i = 0; i < organizador.tareas.length; i++) {
-    if (organizador.tareas[i].estado === status) {
-      console.log(organizador.tareas[i]);
-    }
-  }
-}
+// function filtrarTareas(status) {
+//   for (let i = 0; i < organizador.tareas.length; i++) {
+//     if (organizador.tareas[i].estado === status) {
+//       console.log(organizador.tareas[i]);
+//     }
+//   }
+// }
 
-function eliminarTarea(index) {
-  let tareaEliminada = organizador.tareas[index];
-  organizador.tareas.splice(index, 1);
-  console.log(tareaEliminada);
-}
+// function eliminarTarea(index) {
+//   let tareaEliminada = organizador.tareas[index];
+//   organizador.tareas.splice(index, 1);
+//   console.log(tareaEliminada);
+// }
 
-agregarTarea("Lavar los platos", "Alex", "11-11-2024", false);
-agregarTarea("Lavar el auto", "Alex", "11-11-2024", false);
-agregarTarea("Limpiar la casa", "Alex", "11-11-2024", false);
-agregarTarea("Tirar la basura", "Alex", "11-11-2024", false);
-listarTareas();
+// agregarTarea("Lavar los platos", "Alex", "11-11-2024", false);
+// agregarTarea("Lavar el auto", "Alex", "11-11-2024", false);
+// agregarTarea("Limpiar la casa", "Alex", "11-11-2024", false);
+// agregarTarea("Tirar la basura", "Alex", "11-11-2024", false);
+// listarTareas();
 
-actualizarEstado(0, true);
-listarTareas();
+// actualizarEstado(0, true);
+// listarTareas();
 
-eliminarTarea(0);
-listarTareas();
+// eliminarTarea(0);
+// listarTareas();
+
+/* 
+
+*/
