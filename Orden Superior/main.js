@@ -12,7 +12,7 @@ Higher order function | Orden superior
 
 // function mayorQue(number) {
 //     return (mayor) => mayor > number;
-// } 
+// }
 
 // const mayorQueDiez = mayorQue(10);
 // const mayorQueOnce = (m) => m > 11;
@@ -23,9 +23,9 @@ Higher order function | Orden superior
 
 // function Operacion(operacion) {
 //     if (operacion == "suma") {
-//         return (n1, n2) => n1 + n2; 
+//         return (n1, n2) => n1 + n2;
 //     }else if (operacion == "resta") {
-//         return (n1, n2) => n1 - n2; 
+//         return (n1, n2) => n1 - n2;
 //     }
 // }
 
@@ -47,7 +47,6 @@ Higher order function | Orden superior
 
 // porCadaUno(numeros, console.log)
 
-
 // let total = 0;
 
 // function acumular(numero) {
@@ -64,7 +63,6 @@ Higher order function | Orden superior
 // cadaUno(numbers, acumular);
 
 // console.log(total) // 15
-
 
 // const numDuplicado = [];
 
@@ -142,7 +140,7 @@ numeros.forEach((numero) => {
 // const resultado = cursos.find((curso) => curso.nombre === "JavaScript");
 // const resultado2 = cursos.find((curso) => curso.nombre === "C++");
 
-// console.log(resultado); 
+// console.log(resultado);
 // console.log(resultado2);
 
 /* Filter: Compara por parametro, devuelve lo que busque en un array */
@@ -206,35 +204,39 @@ numeros.forEach((numero) => {
 
 // console.log(total);
 
-const product = [
-    {id: 0, nombre: "Blusa", precio: 14900},
-    {id: 1, nombre: "Pantalón", precio: 19900},
-    {id: 2, nombre: "Remera", precio: 11900},
-    {id: 3, nombre: "Camisa", precio: 22900}
-]
+// const product = [
+//     {id: 0, nombre: "Blusa", precio: 14900},
+//     {id: 1, nombre: "Pantalón", precio: 19900},
+//     {id: 2, nombre: "Remera", precio: 11900},
+//     {id: 3, nombre: "Camisa", precio: 22900}
+// ]
 
-// FIND: Metodo para buscar un producto segun su id:
+// // FIND: Metodo para buscar un producto segun su id:
 
-const itemFound = product.find(item => item.id === 0);
+// const itemFound = product.find(item => item.id === 0);
 
-// SOME: Metodo para verificar si hay algun producto que cumpla con una condicion:
+// // SOME: Metodo para verificar si hay algun producto que cumpla con una condicion:
 
-const hasProduct = product.some(item => item.nombre === "Remeron"); // Devuelve False
+// const hasProduct = product.some(item => item.nombre === "Remeron"); // Devuelve False
 
-// FILTER: Metodo para filtrar los productos segun una condicion:
+// // FILTER: Metodo para filtrar los productos segun una condicion:
 
-const productsFiltered = product.filter(item => item.precio > 15000);
+// const productsFiltered = product.filter(item => item.precio > 15000);
 
-// MAP: Metodo para transformar cada elemento del array:
+// // MAP: Metodo para transformar cada elemento del array:
 
-const productsNames = product.map(item => item.nombre);
+// const productsNames = product.map(item => item.nombre);
 
-// REDUCE: Metodo para reducir el array a un solo valor:
+// // REDUCE: Metodo para reducir el array a un solo valor:
 
-const totalPrice = product.reduce((total, item) => total + item.precio, 0);
+// const totalPrice = product.reduce((total, item) => total + item.precio, 0);
 
-console.log(itemFound);
-console.log(hasProduct);
-console.log(productsFiltered)
-console.log(productsNames);
-console.log(productsFiltered);
+// console.log(itemFound);
+// console.log(hasProduct);
+// console.log(productsFiltered)
+// console.log(productsNames);
+// console.log(productsFiltered);
+
+/* Ejercicios TAREA: 1 */
+
+/* Ejercicios TAREA: 2 */
