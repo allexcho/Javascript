@@ -239,4 +239,87 @@ numeros.forEach((numero) => {
 
 /* Ejercicios TAREA: 1 */
 
+let productos = [
+  {
+    Prenda: "T-Shirt",
+    Categoría: "Casual",
+    Talla: "M",
+    Color: "Red",
+    Código: "A001",
+    Precio: 15.99,
+  },
+  {
+    Prenda: "Jeans",
+    Categoría: "Bottomwear",
+    Talla: "L",
+    Color: "Blue",
+    Código: "A002",
+    Precio: 39.99,
+  },
+  {
+    Prenda: "Jacket",
+    Categoría: "Outerwear",
+    Talla: "XL",
+    Color: "Black",
+    Código: "A003",
+    Precio: 79.99,
+  },
+  {
+    Prenda: "Dress",
+    Categoría: "Formal",
+    Talla: "S",
+    Color: "Green",
+    Código: "A004",
+    Precio: 59.99,
+  },
+  {
+    Prenda: "Shorts",
+    Categoría: "Bottomwear",
+    Talla: "M",
+    Color: "Yellow",
+    Código: "A005",
+    Precio: 25.99,
+  },
+  {
+    Prenda: "Sweater",
+    Categoría: "Outerwear",
+    Talla: "L",
+    Color: "White",
+    Código: "A006",
+    Precio: 45.99,
+  },
+  {
+    Prenda: "Hoodie",
+    Categoría: "Casual",
+    Talla: "XL",
+    Color: "Grey",
+    Código: "A007",
+    Precio: 49.99,
+  },
+  {
+    Prenda: "Skirt",
+    Categoría: "Bottomwear",
+    Talla: "S",
+    Color: "Pink",
+    Código: "A008",
+    Precio: 34.99,
+  },
+  {
+    Prenda: "Blazer",
+    Categoría: "Formal",
+    Talla: "M",
+    Color: "Navy",
+    Código: "A009",
+    Precio: 99.99,
+  },
+  {
+    Prenda: "Polo Shirt",
+    Categoría: "Casual",
+    Talla: "L",
+    Color: "Blue",
+    Código: "A010",
+    Precio: 29.99,
+  },
+];
+
 /* Ejercicios TAREA: 2 */
