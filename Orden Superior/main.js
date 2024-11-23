@@ -241,89 +241,148 @@ numeros.forEach((numero) => {
 
 let productos = [
   {
-    Prenda: "T-Shirt",
-    Categoría: "Casual",
-    Talla: "M",
-    Color: "Red",
-    Código: "A001",
-    Precio: 15.99,
+    prenda: "T-Shirt",
+    categoria: "Casual",
+    talle: "M",
+    color: "Red",
+    codigo: "A001",
+    precio: 15.99,
   },
   {
-    Prenda: "Jeans",
-    Categoría: "Bottomwear",
-    Talla: "L",
-    Color: "Blue",
-    Código: "A002",
-    Precio: 39.99,
+    prenda: "Jeans",
+    categoria: "Bottomwear",
+    talle: "L",
+    color: "Blue",
+    codigo: "A002",
+    precio: 39.99,
   },
   {
-    Prenda: "Jacket",
-    Categoría: "Outerwear",
-    Talla: "XL",
-    Color: "Black",
-    Código: "A003",
-    Precio: 79.99,
+    prenda: "Jacket",
+    categoria: "Outerwear",
+    talle: "XL",
+    color: "Black",
+    codigo: "A003",
+    precio: 79.99,
   },
   {
-    Prenda: "Dress",
-    Categoría: "Formal",
-    Talla: "S",
-    Color: "Green",
-    Código: "A004",
-    Precio: 59.99,
+    prenda: "Dress",
+    categoria: "Formal",
+    talle: "S",
+    color: "Green",
+    codigo: "A004",
+    precio: 59.99,
   },
   {
-    Prenda: "Shorts",
-    Categoría: "Bottomwear",
-    Talla: "M",
-    Color: "Yellow",
-    Código: "A005",
-    Precio: 25.99,
+    prenda: "Shorts",
+    categoria: "Bottomwear",
+    talle: "M",
+    color: "Yellow",
+    codigo: "A005",
+    precio: 25.99,
   },
   {
-    Prenda: "Sweater",
-    Categoría: "Outerwear",
-    Talla: "L",
-    Color: "White",
-    Código: "A006",
-    Precio: 45.99,
+    prenda: "Sweater",
+    categoria: "Outerwear",
+    talle: "L",
+    color: "White",
+    codigo: "A006",
+    precio: 45.99,
   },
   {
-    Prenda: "Hoodie",
-    Categoría: "Casual",
-    Talla: "XL",
-    Color: "Grey",
-    Código: "A007",
-    Precio: 49.99,
+    prenda: "Hoodie",
+    categoria: "Casual",
+    talle: "XL",
+    color: "Grey",
+    codigo: "A007",
+    precio: 49.99,
   },
   {
-    Prenda: "Skirt",
-    Categoría: "Bottomwear",
-    Talla: "S",
-    Color: "Pink",
-    Código: "A008",
-    Precio: 34.99,
+    prenda: "Skirt",
+    categoria: "Bottomwear",
+    talle: "S",
+    color: "Pink",
+    codigo: "A008",
+    precio: 34.99,
   },
   {
-    Prenda: "Blazer",
-    Categoría: "Formal",
-    Talla: "M",
-    Color: "Navy",
-    Código: "A009",
-    Precio: 99.99,
+    prenda: "Blazer",
+    categoria: "Formal",
+    talle: "M",
+    color: "Navy",
+    codigo: "A009",
+    precio: 99.99,
   },
   {
-    Prenda: "Polo Shirt",
-    Categoría: "Casual",
-    Talla: "L",
-    Color: "Blue",
-    Código: "A010",
-    Precio: 29.99,
+    prenda: "Polo Shirt",
+    categoria: "Casual",
+    talle: "L",
+    color: "Blue",
+    codigo: "A010",
+    precio: 29.99,
   },
 ];
 
-function filter(Talle, Color) {
-  return;
+// Filtrando el objeto por talle:
+function filtradoTalle (arr, talle) {
+  return arr.filter(function (item) {
+    return item.talle === talle
+  })
 }
+
+// Probando si funciona la function:
+const filtradoXTalle = filtradoTalle(productos, "M")
+console.log(`Items encontrados con el talle:`, filtradoXTalle)
+
+// Filtrando el objeto por color: 
+function filtradoColor(arr, color) {
+  return arr.filter(function (item) {
+    return item.color === color
+  })
+}
+
+// Probando si funciona la function: 
+const filtradoXColor = filtradoColor(productos, "Yellow")
+console.log(`Items encontrados con el color:`, filtradoXColor)
+
+// La suma de todos los productos:
+function total (arr) {
+  return arr.reduce(function (suma, productos) {
+    return suma + productos.precio
+  }, 0)
+}
+
+// Probando si funciona la function:
+const sumatotal = total(productos)
+console.log(`El total de todos los productos:`, sumatotal)
+
+// Function para ver los precios mas altos:
+function mayorPrecio(arr) {
+  return arr.reduce(function (max, productos) {
+    if (productos.precio > max.precio) {
+      return productos
+    } else {
+      return max
+    }
+  })
+}
+
+// Probando si funciona la function:
+const masCaro = mayorPrecio(productos)
+console.log(`El producto mas caro es:`, masCaro)
+
+// Function para ver los precios mas bajos:
+function menorPrecio(arr) {
+  return arr.reduce(function (min, productos) {
+    if (productos.precio < min.precio) {
+      return productos
+    } else {
+      return min
+    }
+  })
+}
+
+// Probando si funciona la function:
+const menosCaro = menorPrecio(productos)
+console.log(`El producto mas barato es:`, menosCaro)
 
 /* Ejercicios TAREA: 2 */
