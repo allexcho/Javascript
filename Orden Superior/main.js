@@ -322,4 +322,8 @@ let productos = [
   },
 ];
 
+function filter(Talle, Color) {
+  return;
+}
+
 /* Ejercicios TAREA: 2 */
