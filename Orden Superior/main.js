@@ -323,66 +323,138 @@ let productos = [
 ];
 
 // Filtrando el objeto por talle:
-function filtradoTalle (arr, talle) {
+function filtradoTalle(arr, talle) {
   return arr.filter(function (item) {
-    return item.talle === talle
-  })
+    return item.talle === talle;
+  });
 }
 
 // Probando si funciona la function:
-const filtradoXTalle = filtradoTalle(productos, "M")
-console.log(`Items encontrados con el talle:`, filtradoXTalle)
+const filtradoXTalle = filtradoTalle(productos, "M");
+console.log(`Items encontrados con el talle:`, filtradoXTalle);
 
-// Filtrando el objeto por color: 
+// Filtrando el objeto por color:
 function filtradoColor(arr, color) {
   return arr.filter(function (item) {
-    return item.color === color
-  })
-}
-
-// Probando si funciona la function: 
-const filtradoXColor = filtradoColor(productos, "Yellow")
-console.log(`Items encontrados con el color:`, filtradoXColor)
-
-// La suma de todos los productos:
-function total (arr) {
-  return arr.reduce(function (suma, productos) {
-    return suma + productos.precio
-  }, 0)
+    return item.color === color;
+  });
 }
 
 // Probando si funciona la function:
-const sumatotal = total(productos)
-console.log(`El total de todos los productos:`, sumatotal)
+const filtradoXColor = filtradoColor(productos, "Yellow");
+console.log(`Items encontrados con el color:`, filtradoXColor);
+
+// La suma de todos los productos:
+function total(arr) {
+  return arr.reduce(function (suma, productos) {
+    return suma + productos.precio;
+  }, 0);
+}
+
+// Probando si funciona la function:
+const sumatotal = total(productos);
+console.log(`El total de todos los productos:`, sumatotal);
 
 // Function para ver los precios mas altos:
 function mayorPrecio(arr) {
   return arr.reduce(function (max, productos) {
     if (productos.precio > max.precio) {
-      return productos
+      return productos;
     } else {
-      return max
+      return max;
     }
-  })
+  });
 }
 
 // Probando si funciona la function:
-const masCaro = mayorPrecio(productos)
-console.log(`El producto mas caro es:`, masCaro)
+const masCaro = mayorPrecio(productos);
+console.log(`El producto mas caro es:`, masCaro);
 
 // Function para ver los precios mas bajos:
 function menorPrecio(arr) {
   return arr.reduce(function (min, productos) {
     if (productos.precio < min.precio) {
-      return productos
+      return productos;
     } else {
-      return min
+      return min;
     }
-  })
+  });
 }
 
 // Probando si funciona la function:
-const menosCaro = menorPrecio(productos)
-console.log(`El producto mas barato es:`, menosCaro)
+const menosCaro = menorPrecio(productos);
+console.log(`El producto mas barato es:`, menosCaro);
 
 /* Ejercicios TAREA: 2 */
+
+class CuentaBancaria {
+  constructor(titular, saldo, numeroCuenta) {
+    this.titular = titular;
+    this.saldo = saldo;
+    this.numeroCuenta = numeroCuenta;
+  }
+
+  Depositar(monto) {
+    if (monto > 0) {
+      this.saldo += monto;
+      console.log(`El monto del deposito es: ${monto}`);
+    } else {
+      console.log("El monto a depositar debe ser positivo.");
+    }
+  }
+
+  Retirar(monto) {
+    if (monto > 0 && this.saldo >= monto) {
+      this.saldo -= monto;
+      console.log(`El monto a retirar es: ${monto}`);
+    } else if (monto > this.saldo) {
+      console.log("Fondos insuficientes");
+    } else {
+      console.log("El monto a retirar debe ser positivo");
+    }
+  }
+}
+
+const cuentas = [
+  { titular: "Juan Perez", saldo: 1500, numeroCuenta: 101 },
+  { titular: "Ana Lopez", saldo: 2500, numeroCuenta: 102 },
+  { titular: "Luis Martinez", saldo: 3000, numeroCuenta: 103 },
+  { titular: "Maria Gonzalez", saldo: 1200, numeroCuenta: 104 },
+  { titular: "Carlos Rivera", saldo: 500, numeroCuenta: 105 },
+  { titular: "Sofia Ramirez", saldo: 2000, numeroCuenta: 106 },
+  { titular: "Miguel Torres", saldo: 750, numeroCuenta: 107 },
+  { titular: "Laura Sanchez", saldo: 4000, numeroCuenta: 108 },
+  { titular: "Pedro Vargas", saldo: 100, numeroCuenta: 109 },
+  { titular: "Lucia Fernandez", saldo: 1800, numeroCuenta: 110 },
+];
+
+// Function para devolver todos los nombres de los usuarios:
+function obtenerListaTitulares(cuentas) {
+  const titulares = cuentas.map((cuentas) => cuentas.titular);
+  return titulares;
+}
+//Probando si funciona correctamente
+const clientes = obtenerListaTitulares(cuentas);
+console.log(clientes);
+
+// Function para que nos devuelva true o false:
+function verificarSiHayCuentaConSaldoMayor(cuentas, monto) {
+  return cuentas.some((cuenta) => cuenta.saldo > monto);
+}
+//Probando si funciona correctamente
+console.log(verificarSiHayCuentaConSaldoMayor(cuentas, 1000));
+
+// Function para encontrar el usuario con el numero de cuenta:
+
+function encontrarCuentaPorNumero(cuentas, numeroCuenta) {
+  const usuario = cuentas.find(
+    (cuenta) => cuenta.numeroCuenta === numeroCuenta
+  );
+  if (usuario) {
+    return usuario;
+  } else {
+    return "Cuenta no encontrada";
+  }
+}
+
+console.log(encontrarCuentaPorNumero(cuentas, 107));
